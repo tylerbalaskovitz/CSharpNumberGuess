@@ -40,7 +40,22 @@ namespace NumberGuesser
 
             //While guess is not correct
             while (guess != correctNumber){
+
+                //This is where we get the number but we have to make sure it's a number
                 string input = Console.ReadLine();
+
+                //Ensure that it's a number
+                if (!int.TryParse(input, out guess)){
+                Console.ForegroundColor = ConsoleColor.Red;
+
+                    //tell user its's the wrong number
+                Console.WriteLine("It's not a number, please try again");
+
+                Console.ResetColor();
+
+                continue;
+
+                }
 
                 //parse the String into an int
                 guess = Int32.Parse(input);
@@ -51,14 +66,19 @@ namespace NumberGuesser
                     //change the text color
                 Console.ForegroundColor = ConsoleColor.Red;
 
+                    //tell user its's the wrong number
                 Console.WriteLine("Wrong number, please try again");
 
                 Console.ResetColor();
 
                 }
-                //Outputting a success message.
-
             }
+             //Outputting a success message.
+                Console.ForegroundColor = ConsoleColor.Yellow;
+
+                Console.WriteLine("You are correct");
+
+                Console.ResetColor();
         }
     }
 
