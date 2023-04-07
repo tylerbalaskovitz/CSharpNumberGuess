@@ -1,0 +1,15 @@
+/home/tyler/MyApp/bin/Debug/net7.0/MyApp
+/home/tyler/MyApp/bin/Debug/net7.0/MyApp.deps.json
+/home/tyler/MyApp/bin/Debug/net7.0/MyApp.runtimeconfig.json
+/home/tyler/MyApp/bin/Debug/net7.0/MyApp.dll
+/home/tyler/MyApp/bin/Debug/net7.0/MyApp.pdb
+/home/tyler/MyApp/obj/Debug/net7.0/MyApp.csproj.AssemblyReference.cache
+/home/tyler/MyApp/obj/Debug/net7.0/MyApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/tyler/MyApp/obj/Debug/net7.0/MyApp.AssemblyInfoInputs.cache
+/home/tyler/MyApp/obj/Debug/net7.0/MyApp.AssemblyInfo.cs
+/home/tyler/MyApp/obj/Debug/net7.0/MyApp.csproj.CoreCompileInputs.cache
+/home/tyler/MyApp/obj/Debug/net7.0/MyApp.dll
+/home/tyler/MyApp/obj/Debug/net7.0/refint/MyApp.dll
+/home/tyler/MyApp/obj/Debug/net7.0/MyApp.pdb
+/home/tyler/MyApp/obj/Debug/net7.0/MyApp.genruntimeconfig.cache
+/home/tyler/MyApp/obj/Debug/net7.0/ref/MyApp.dll

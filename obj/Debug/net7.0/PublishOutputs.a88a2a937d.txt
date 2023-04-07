@@ -1,0 +1,5 @@
+/home/tyler/MyApp/bin/Debug/net7.0/publish/MyApp
+/home/tyler/MyApp/bin/Debug/net7.0/publish/MyApp.dll
+/home/tyler/MyApp/bin/Debug/net7.0/publish/MyApp.deps.json
+/home/tyler/MyApp/bin/Debug/net7.0/publish/MyApp.runtimeconfig.json
+/home/tyler/MyApp/bin/Debug/net7.0/publish/MyApp.pdb
