@@ -7,32 +7,24 @@ namespace NumberGuesser
     //Main class
     class Program{
 
+
         //Entry point method
         static void Main(string [] args){
 
-            //setting the app vars
-            string appName = "Number Guesser";
-            string appVersion = "1.0.0";
-            string appAuthor = "Tyler Balaskovitz";
 
-            //Change text colr
-            Console.ForegroundColor = ConsoleColor.Green;
+            GetAppInfo(); //Run GetAppInfo function.
 
-            //Write out app information
+            GreetUser();
 
-            Console.WriteLine("{0}: Version {1} by {2}", appName, appVersion, appAuthor);
+            while (true){
+            //int correctNumber = 8;
 
-            Console.ResetColor();
+            //Creating a new random object
 
-            //Asking the user's name
-            Console.WriteLine("What is your name?");
+            Random random = new Random();
 
-            //Geting the user's input
-            string inputName = Console.ReadLine();
+            int correctNumber = random.Next(1, 10);
 
-            Console.WriteLine("Hello {0}, let's play a game...", inputName);
-
-            int correctNumber = 8;
 
             //Init guess var
             int guess = 0;
@@ -46,12 +38,8 @@ namespace NumberGuesser
 
                 //Ensure that it's a number
                 if (!int.TryParse(input, out guess)){
-                Console.ForegroundColor = ConsoleColor.Red;
-
-                    //tell user its's the wrong number
-                Console.WriteLine("It's not a number, please try again");
-
-                Console.ResetColor();
+                    //Print error message
+                    PrintColorMessage(ConsoleColor.Red, "Please use an actual number");
 
                 continue;
 
@@ -63,24 +51,69 @@ namespace NumberGuesser
                 //match the guess to the correct number
 
                 if (guess != correctNumber){
-                    //change the text color
-                Console.ForegroundColor = ConsoleColor.Red;
-
-                    //tell user its's the wrong number
-                Console.WriteLine("Wrong number, please try again");
-
-                Console.ResetColor();
+                PrintColorMessage(ConsoleColor.Red, "Wrong number, please try again");
 
                 }
             }
              //Outputting a success message.
-                Console.ForegroundColor = ConsoleColor.Yellow;
+                PrintColorMessage(ConsoleColor.Yellow, "You're correct! Congratulations");
 
-                Console.WriteLine("You are correct");
+                //Ask to play again.
+                Console.WriteLine("Play Again? [Y or N]");
+
+                //Get answer
+                string answer = Console.ReadLine().ToUpper();
+
+                if (answer == "Y"){
+                    continue;
+                } 
+                else if (answer == "N"){
+                    return;
+                }
+                else{
+                    return;
+                }
+
+            }
+        }
+
+        static void GetAppInfo(){
+                        //setting the app vars
+                    string appName = "Number Guesser";
+                    string appVersion = "1.0.0";
+                    string appAuthor = "Tyler Balaskovitz";
+
+                    //Change text colr
+                    Console.ForegroundColor = ConsoleColor.Green;
+
+                    //Write out app information
+
+                    Console.WriteLine("{0}: Version {1} by {2}", appName, appVersion, appAuthor);
+
+                    Console.ResetColor();
+
+        }
+
+        //Print color message
+
+        static void PrintColorMessage(ConsoleColor color, string message){
+             Console.ForegroundColor = color;
+
+                    //tell user its's the wrong number
+                Console.WriteLine(message);
 
                 Console.ResetColor();
         }
-    }
 
-    
+        static void GreetUser(){
+                       //Asking the user's name
+            Console.WriteLine("What is your name?");
+
+            //Geting the user's input
+            string inputName = Console.ReadLine();
+
+            Console.WriteLine("Hello {0}, let's play a game...", inputName);
+        }
+
+    }
 }
