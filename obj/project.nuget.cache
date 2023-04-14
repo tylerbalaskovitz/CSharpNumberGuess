@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GXOj1k+zKc6ggaVbZW58effm/JBogbPOjYqd+7HMgCTG3tw6CW0kf0/kNxYJS6KwI1OKSg25fhYBTAIzNBY8yQ==",
+  "dgSpecHash": "PkJzn3Dp62YxQJp5CQ3+MFF3GrPgyZleb/M6a3c9zToGi8PtCGy1jMQhNfKrik9YDSx5sUPKSWOSSMMAgJq1wA==",
   "success": true,
-  "projectFilePath": "/home/tyler/MyApp/MyApp.csproj",
+  "projectFilePath": "/home/tyler/Documents/Workspace/MyApp/MyApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
